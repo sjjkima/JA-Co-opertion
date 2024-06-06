@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-adsense-account" content="ca-pub-5563986273176648">
+    <title>Portfolio</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Your CSS Stylesheet -->
+	<style>
+    /* CSS styles for the portfolio with black background and animation */
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns grid */
+  grid-gap: 2rem; /* Gap between items */
+  margin-top: 3rem;
+}
+
+.portfolios .portfolio-item {
+  position: relative;
+  border-radius: 15px;
+  background-color: #000; /* Black background */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.portfolios .portfolio-item img {
+  width: 100%;
+  height: 300px; /* Fixed height for images */
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease-in-out; /* Image transformation animation */
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Image zoom on hover */
+}
+
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out; /* Opacity animation */
+}
+
+.portfolios .portfolio-item:hover .hover-items {
+  opacity: 1;
+}
+
+.portfolio-item .hover-items h3 {
+  font-size: 1.5rem;
+  color: #fff; /* Change text color to white */
+  margin-bottom: 1.5rem;
+}
+
+
+.portfolios .portfolio-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
+  background-color: var(--color-white);
+}
+
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
+  color: var(--color-primary);
+}
+
+/* Styles for the h1 element */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #fff; /* Changed color to white */
+}
+
+/* Styles for the span with class bg-text */
+.bg-text {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the p element with class port-text */
+.port-text {
+  text-align: center;
+  font-style: italic;
+  color: black; /* Changed color to white */
+  font-size: 1.2em;
+  margin-top: 20px;
+  position: relative; /* Ensure it's positioned relative to its parent */
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+
+/* Additional styles for a more modern look */
+h1,
+.port-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-text:hover {
+  background-color: #0056b3;
+}
+
+    </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5563986273176648"
+     crossorigin="anonymous"></script>
+	<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+	 
+</head>
+<body>
+
+<section class="container" id="portfolio">
+    <div class="main-title">
+        <h1><span class="bg-text">View Work</span></h1>
+    </div>
+    <p class="port-text">
+        Here is some of my work that I've done in various programming languages.
+    </p>
+    <div class="portfolios"> 
+	    
+<!-- Portfolio Item -->
+	    
+       <div class="portfolio-item">
+    <div class="image">
+        <img src="img/port1.jpg" alt="">
+    </div>
+    <div class="hover-items">
+        <h3>Project Source</h3>
+        <div class="icons">
+            <a href="https://github.com/sandeshsb9" class="icon">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+		
+		<div class="portfolio-item">
+            <div class="image">
+                <img src="img/port2.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Project Source</h3>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-item">
+            <div class="image">
+                <img src="img/port3.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Project Source</h3>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-item">
+            <div class="image">
+                <img src="img/port4.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Project Source</h3>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-item">
+            <div class="image">
+                <img src="img/port5.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Project Source</h3>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-item">
+            <div class="image">
+                <img src="img/port6.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Project Source</h3>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+		
+		<div class="portfolio-item">
+            <div class="image">
+                <img src="img/port7.jpg" alt="">
+            </div>
+            <div class="hover-items">
+                <h3>Project Source</h3>
+                <div class="icons">
+                    <a href="#" class="icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Portfolio Item -->
+
+        <!-- Repeat the above structure for other portfolio items -->
+        <!-- Remember to change the image source, project title, and any other details as needed -->
+    </div>
+</section>
+	<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-5563986273176648"
+     data-ad-slot="7291289667"
+     data-auto-format="mcrspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+	
+</body>
+</html>
